@@ -11,7 +11,7 @@ const Navbar = ({ Logo }) => {
   return (
     <NavStyles>
       <div className="masthead flex-container">
-        <img src={Logo} alt="Startup Logo" />
+        <img src={Logo} alt="Startup Logo" style={{ width: "250px"}}/>
         <button
           className={isOpen ? "toggle-btn toggle-btn-active" : "toggle-btn"}
           type="button"
@@ -46,6 +46,7 @@ export const NavStyles = styled.nav`
   display: flex;
   padding: 1rem;
   box-sizing: border-box;
+  background: black;
 
   .masthead {
     z-index: 3;
